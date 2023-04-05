@@ -1,0 +1,134 @@
+html {
+  font-size: 62.5%;
+}
+a {
+  text-decoration: underline;
+}
+
+* {
+  font-family: Helvetica Neue, Arial, Hiragino Sans, Meiryo, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #2b2a27;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+.flex {
+  display: flex;
+}
+
+.wrap {
+  margin-bottom: 60px;
+}
+
+#mainvis {
+  height: 700px;
+  width: 50vw;
+  object-fit: cover;
+  object-position: center;
+}
+
+#recipe {
+  width: 50vw;
+  padding: 40px 76px 0 60px;
+}
+
+.name p {
+  font-size: 1.6rem;
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+h1 {
+  // font: normal normal bold 32px/48px Arial;
+  font-weight: bold;
+  font-size: 3.2rem;
+  line-height: 48px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 24px;
+  font-weight: 700;
+  border-bottom: solid grey 1px;
+  margin: 40px 0;
+  padding-bottom: 5px;
+}
+
+dl {
+  flex-wrap: wrap;
+}
+
+dt {
+  width: 90%;
+  font-size: 1.6rem;
+  font-weight: normal;
+  border-bottom: solid grey 1px;
+  line-height: 24px;
+}
+dd {
+  width: 10%;
+  font-size: 1.6rem;
+  font-weight: normal;
+  border-bottom: solid grey 1px;
+  line-height: 24px;
+}
+
+.howTo {
+  margin-top: 46px;
+  ol {
+    li {
+      font-size: 1.6rem;
+      margin-left: 20px;
+      border-bottom: solid grey 1px;
+      line-height: 24px;
+    }
+  }
+}
+
+.more {
+  padding: 18px 60px;
+  border: #2b2a27 solid 1px;
+  width: 240px;
+  margin: 0 auto 80px auto;
+  font-size: 1.4rem;
+  line-height: 28px;
+  text-decoration: none;
+  display: block;
+  font: normal normal normal 14px/48px Meiryo;
+}
+
+.sns {
+  margin: 0 auto;
+  width: 200px;
+  justify-content: space-between;
+}
+
+footer {
+  font: normal normal normal 12px/21px Arial;
+  p {
+    text-align: center;
+    margin: 20px auto;
+  }
+}
+
+@media screen and (max-width: 834px) {
+  .wrap {
+    flex-direction: column;
+    #mainvis,
+    #recipe {
+      width: 100vw;
+      height: auto;
+      img {
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+}
